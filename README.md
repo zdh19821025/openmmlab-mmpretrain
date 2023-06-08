@@ -10,6 +10,9 @@
 在水果数据集上进行微调训练
 使用 MMPreTrain 的 ImageClassificationInferencer 接口，对网络水果图像，或自己拍摄的水果图像，使用训练好的模型进行分类
 需提交的验证集评估指标（不能低于 60%）
+![image](https://github.com/zdh19821025/openmmlab-mmpretrain/assets/54253071/1eebaaf3-6460-4b0e-b99d-37949703aedd)
+
+验证集评估指标见日志文件 20230608_082233.log
 
 作业数据集下载：
 链接：https://pan.baidu.com/s/1YgoU1M_v7ridtXB9xxbA1Q
