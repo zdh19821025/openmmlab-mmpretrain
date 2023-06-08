@@ -19,7 +19,7 @@
 提取码：52m9
 
 
-推理结果：
+推理代码：
 from mmpretrain import ImageClassificationInferencer
 image = r'E:\AI_mode\mmpretrain-1.0.0rc8\data\fruit30\val\菠萝\161.jpeg'
 config = r'E:\AI_mode\mmpretrain-1.0.0rc8\configs\resnet50_8xb32-coslr_in1k.py'
@@ -29,4 +29,5 @@ inferencer = ImageClassificationInferencer(model=config, pretrained=checkpoint, 
 result = inferencer(image)[0]
 print(result['pred_class'])
 
+推理结果：
 Inference ---------------------------------------- 100% 0:00:00菠萝
