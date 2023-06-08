@@ -17,3 +17,16 @@
 作业数据集下载：
 链接：https://pan.baidu.com/s/1YgoU1M_v7ridtXB9xxbA1Q
 提取码：52m9
+
+
+推理结果：
+from mmpretrain import ImageClassificationInferencer
+image = r'E:\AI_mode\mmpretrain-1.0.0rc8\data\fruit30\val\菠萝\161.jpeg'
+config = r'E:\AI_mode\mmpretrain-1.0.0rc8\configs\resnet50_8xb32-coslr_in1k.py'
+
+checkpoint = r'E:\AI_mode\mmpretrain-1.0.0rc8\work_dirs\resnet50_8xb32-coslr_in1k\epoch_300.pth'
+inferencer = ImageClassificationInferencer(model=config, pretrained=checkpoint, device='cuda')
+result = inferencer(image)[0]
+print(result['pred_class'])
+
+Inference ---------------------------------------- 100% 0:00:00菠萝
